@@ -241,8 +241,16 @@ h6,
 }
 
 .page-header {
-    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/about-header.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/about-header.png) center center no-repeat;
     background-size: cover;
+}
+.contact-header {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/contact-header.jpg) center center no-repeat;
+    background-size: cover; 
+}
+.error-header {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/error-header.png) center center no-repeat;
+    background-size: cover; 
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
