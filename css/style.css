@@ -534,6 +534,24 @@ h6,
     padding: 10px;
     border-radius: 20px 0px 0px 20px;
 }
+.admission-open span {
+    display: block;
+    text-align: center;
+    font-size: 19px;
+    color: #2c3795;
+    font-weight: 700;
+}
+.text-change {
+    color: #fe5d37 !important;
+}
+.text-change:after {
+    content:"";
+    animation: text-change 2s linear infinite;
+  }
+@keyframes text-change {
+    0% { content:"Click here"}
+    100% { content:"2022-2023"}
+}
 .admission-bg-change {
     background: #d6d8ea4f;
 }
@@ -580,7 +598,7 @@ h6,
     border-radius: 10px;
     padding: 20px;
     overflow: hidden;
-    box-shadow: inset 0px 0 4px #d5d5d5;
+    box-shadow: 0px 10px 30px 0px rgb(0 0 0 / 8%)
 }
 
 .section-services .single-service .content {
