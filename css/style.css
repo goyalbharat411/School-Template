@@ -256,7 +256,10 @@ h6,
     background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/gallery-header.jpg) center center no-repeat;
     background-size: cover; 
 }
-
+.pay-header {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/pay-header.jpg) center center no-repeat;
+    background-size: cover; 
+}
 .breadcrumb-item + .breadcrumb-item::before {
     color: rgba(255, 255, 255, .5);
 }
@@ -777,4 +780,23 @@ h6,
     border: 0;
     border-radius: 0.1875rem;
     box-shadow: 0px 10px 30px 0px rgb(0 0 0 / 8%);
+    padding: 0;
+    border: 1px solid #d5d5d5;
+}
+.card .card-body {
+    padding: 30px;
+}
+.card .from-input input, .card .form-select, .card textarea {
+    border-radius: 0;
+}
+.card .from-input input:hover, .card .from-input input:focus, .card .form-select:hover, .card .form-select:focus, .card textarea:hover, .card textarea:focus {
+    outline: 0;
+    box-shadow: none;
+    border-color: #20466b;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+  opacity: 1;
 }
