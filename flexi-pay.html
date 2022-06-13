@@ -145,21 +145,63 @@
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                     <h1 class="mb-3">Student Payment Details (Flexible Fee)</h1>
                 </div>
-                    <div class="row justify-content-between">
-                        <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
-                            <img class=" w-100" src="img/vision.jpg" style="object-fit: cover;">
+                    <div class="row justify-content-center flexipay">
+                        <div class="col-lg-4 user-image" style="display: none;">
+                            <img class=" w-100" src="img/user-img.jpg" style="object-fit: cover;">
                         </div>
-                        <div class="col-lg-6 wow fadeIn bg-white rounded pay-section p-4" data-wow-delay="0.5s">
+                        <div class="col-lg-5 col-md-5 h-100 wow fadeIn bg-white rounded search-input pay-section p-4" data-wow-delay="0.5s">
                             <div class="from-input">
                                 <label for="" class="form-label"><b>You can only pay for the current session.</b></label>
                                 <div class="search">
                                     <i class="fa fa-search"></i>
                                     <input type="text" class="form-control" placeholder="Enter Enrollment Number">
-                                    <button class="btn btn-primary">Fetch Detail</button>
+                                    <button class="btn btn-primary fetch-detail">Fetch Detail</button>
                                   </div>
                             </div>
+                            <h6 class="background"><span>OR</span></h6>
+                            <div class="col-md-12 text-center mt-5">
+                                <button type="button" id="toogle-btn" class="btn btn-primary"><i class="fa fa-search"></i> Find Student Enrollment Number</button></div>
 
-                        </div>
+                                <div class="row g-4 mt-4 search-enroll" id="search-enroll" style="display: none;">
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <div class="from-input">
+                                            <input type="text" class="form-control" id="" placeholder="Enter Student Name">
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
+                                        <div class="from-input">
+                                            <input type="text" class="form-control" id="" placeholder="Enter Student Father Name">
+                                          </div>
+                                    </div>
+                                    <div class="col-md-12 text-center">
+                                        <button type="button" class="btn btn-primary fetch-detail">Search Enroll</button></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-5 student-information bg-white " style="display: none;">
+                                <div class="card rounded pay-section">
+                                    <div class="card-header text-center p-3">
+                                        <p>Payment Details of Hiyansh Goyal</p>
+                                    </div>
+                                    <div class="card-body p-3">
+                                        <ul class="ps-0">
+                                            <li><b>Student Name:</b> Hiyansh Goyal</li>
+                                            <li><b>Father's Name:</b> Bharat Goyal</li>
+                                            <li><b>Student Class:</b> Nursery</li>
+                                            <li><b>Total Fee:</b> 31680</li> 
+                                            <li><b>Paid Fee:</b> 0</li> 
+                                            <li><b>Remaining Fee:</b> 31680</li> 
+                                            <li><b>Total Fee:</b> 31680</li>
+                                            <li><input type="radio" checked value=""/><img src="./img/payu.png" alt=""/></li>
+                                        </ul>
+                                    </div>
+                                    <div class="card-footer p-3 d-flex justify-content-between">
+                                        <img src="./img/payment_icons.png" class="w-25" alt="" />
+                                        <button type="button" class="btn btn-primary">Click for pay fee <i class="fa-solid fa-indian-rupee-sign"></i> 31680</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            
                     </div>
             </div>
         </div>
@@ -237,6 +279,7 @@
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
 
+    
     <!-- JavaScript Libraries -->
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
@@ -247,6 +290,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
 </body>
 
 </html>

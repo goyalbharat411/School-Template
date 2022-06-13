@@ -3,7 +3,17 @@
 
     // Initiate the wowjs
     new WOW().init();
+    // Toogle
+    $("#toogle-btn").click(function(){
+        $("#search-enroll").slideToggle('slow');
+    });
+    $('.fetch-detail').click(function(){
+        $('.student-information').css('display', 'block');
+        $('.flexipay').removeClass('justify-content-center');
+        $('.search-input').css('display', 'none');
+        $('.user-image').css('display', 'block');
 
+    });
 
     // Spinner
     var spinner = function () {
