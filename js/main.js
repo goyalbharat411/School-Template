@@ -12,8 +12,14 @@
         $('.flexipay').removeClass('justify-content-center');
         $('.search-input').css('display', 'none');
         $('.user-image').css('display', 'block');
-
     });
+    $('.back-btn').click(function(){
+        $('.student-information').css('display', 'none');
+        $('.flexipay').addClass('justify-content-center');
+        $('.search-input').css('display', 'block');
+        $('.user-image').css('display', 'none');
+    });
+    
 
     // Spinner
     var spinner = function () {
