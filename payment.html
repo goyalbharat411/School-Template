@@ -382,7 +382,7 @@
                                 <img src="./img/Asset-33.png" alt=""/>
                             </a>
                             <a class="" href="#!" target="_self">
-                                <img src="./img/qr.png" alt="" class="scan-image"/>
+                                <img src="./img/qr.png" alt="" class="scan-image" data-bs-toggle="modal" data-bs-target="#scanpopup"/>
                             </a>
                         </div>
                     </div>
@@ -399,6 +399,19 @@
         </div>
         <!-- Footer End -->
 
+        <!-- Modal -->
+        <div class="modal fade lightbox-modal" id="scanpopup" tabindex="-1">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <div class="modal-body">
+                    <div class="container-fluid p-0">
+                        <img src="./img/qr.png" alt=""/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
 
         <!-- Admission Open -->
         <div class="admission-open">
