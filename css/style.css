@@ -864,7 +864,8 @@ h6.background span {
 .search-enroll input {
   border-radius: 0;
 }
-.search-enroll input:hover, .search-enroll input:focus {
+.search-enroll input:hover,
+.search-enroll input:focus {
   box-shadow: none;
 }
 .flexipay {
@@ -901,13 +902,13 @@ h6.background span {
   display: block;
 }
 .nav-pills-custom .nav-link {
-    color: #103741;
-    background: #fff;
-    position: relative;
+  color: #103741;
+  background: #fff;
+  position: relative;
 }
 .nav-pills-custom .nav-link.active {
-    color: #fff;
-    background: #fe5d37;
+  color: #fff;
+  background: #fe5d37;
 }
 .nav-pills-custom .nav-link.active::before {
   opacity: 1;
@@ -915,19 +916,16 @@ h6.background span {
 }
 /* Add indicator arrow for the active tab */
 @media (min-width: 992px) {
-    .nav-pills-custom .nav-link::before {
-        content: '';
-        display: block;
-        border-top: 8px solid transparent;
-        border-left: 10px solid #fff;
-        border-bottom: 8px solid transparent;
-        position: absolute;
-        top: 50%;
-        right: -8px;
-        transform: translateY(-50%);
-        opacity: 0;
-    }
-}
-.tab-header img {
-  
+  .nav-pills-custom .nav-link::before {
+    content: "";
+    display: block;
+    border-top: 8px solid transparent;
+    border-left: 10px solid #fff;
+    border-bottom: 8px solid transparent;
+    position: absolute;
+    top: 50%;
+    right: -8px;
+    transform: translateY(-50%);
+    opacity: 0;
+  }
 }
