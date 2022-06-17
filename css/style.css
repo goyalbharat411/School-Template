@@ -704,6 +704,10 @@ h6,
   height: 60px;
   margin-left: 10px;
 }
+.youtube iframe {
+  height: auto;
+  aspect-ratio: 16/9;
+}
 .image-grid figure {
   margin-bottom: 0;
 }
@@ -711,6 +715,9 @@ h6,
 .image-grid img {
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
   transition: box-shadow 0.2s;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  width: 100%;
 }
 
 .image-grid a:hover img {
@@ -929,3 +936,19 @@ h6.background span {
     opacity: 0;
   }
 }
+
+/* @media (display-mode:fullscreen) {
+  .youtube iframe {
+    display: none;
+  }
+}
+@media (display-mode:browser) {
+  .youtube iframe {
+    display: none;
+  }
+}
+@media (display-mode:minimal-ui) {
+  .youtube iframe {
+    display: none;
+  }
+} */

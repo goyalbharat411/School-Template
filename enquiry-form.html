@@ -154,34 +154,33 @@
                             <h2 class="card-title">Student Enquiry Form</h2>
                         </div>
                         <div class="card-body">
+                            <form class="needs-validation row g-3" novalidate>
                             <div class="row gy-4">
                                 <div class="col-lg-4 col-md-4 col-sm-6">
                                     <div class="from-input">
-                                        <label for="" class="form-label">Student Name <span
+                                        <label for="studentname" class="form-label">Student Name <span
                                                 style="color: red;">*</span></label>
-                                        <input type="text" class="form-control" id="" placeholder="Enter Student Name">
+                                        <input type="text" class="form-control" name="studentname" id="studentname" placeholder="Enter Student Name" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-6">
                                     <div class="from-input">
-                                        <label for="" class="form-label">Student/Father Email <span
+                                        <label for="studentemail" class="form-label">Student/Father Email <span
                                                 style="color: red;">*</span></label>
-                                        <input type="email" class="form-control" id=""
-                                            placeholder="Enter Student Email">
+                                        <input type="email" class="form-control" name="studentemail" id="studentemail" placeholder="Enter Student Email" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-6">
                                     <div class="from-input">
-                                        <label for="" class="form-label">Student/Father Mobile <span
+                                        <label for="studentmobile" class="form-label">Student/Father Mobile <span
                                                 style="color: red;">*</span></label>
-                                        <input type="text" class="form-control" id=""
-                                            placeholder="Enter Student Mobile">
+                                        <input type="number" class="form-control" name="studentmobile" id="studentmobile" placeholder="Enter Student Mobile" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-6">
-                                    <label for="" class="form-label">Gender <span style="color: red;">*</span></label>
-                                    <select class="form-select" aria-label="">
-                                        <option selected disabled>Please Select</option>
+                                    <label for="gender" class="form-label">Gender <span style="color: red;">*</span></label>
+                                    <select class="form-select" aria-label="" name="gender" id="gender" required>
+                                        <option value="">Please Select</option>
                                         <option value="male">Male</option>
                                         <option value="female">Female</option>
                                     </select>
@@ -190,13 +189,13 @@
                                     <div class="from-input">
                                         <label for="" class="form-label">Date of Birth <span
                                                 style="color: red;">*</span></label>
-                                        <input type="date" class="form-control" id="" placeholder="Enter date of birth">
+                                        <input type="date" class="form-control" id="" placeholder="Enter date of birth" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-6">
                                     <label for="" class="form-label">Category <span style="color: red;">*</span></label>
-                                    <select class="form-select" aria-label="">
-                                        <option selected disabled>Please Select</option>
+                                    <select class="form-select" aria-label="" required>
+                                       <option value="">Please Select</option>
                                         <option value="Genral">Genral</option>
                                         <option value="OBC">OBC</option>
                                         <option value="ST">ST</option>
@@ -209,53 +208,53 @@
                                     <div class="from-input">
                                         <label for="" class="form-label">Mother Tongue <span
                                                 style="color: red;">*</span></label>
-                                        <input type="text" class="form-control" id="" placeholder="Enter Mother Tongue">
+                                        <input type="text" class="form-control" id="" placeholder="Enter Mother Tongue" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-3 col-sm-6">
                                     <div class="from-input">
                                         <label for="" class="form-label">Nationality <span
                                                 style="color: red;">*</span></label>
-                                        <input type="text" class="form-control" id="" placeholder="Enter Nationality">
+                                        <input type="text" class="form-control" id="" placeholder="Enter Nationality" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-3 col-sm-6">
                                     <div class="from-input">
                                         <label for="" class="form-label">Birth Place <span
                                                 style="color: red;">*</span></label>
-                                        <input type="text" class="form-control" id="" placeholder="Enter Birth Place">
+                                        <input type="text" class="form-control" id="" placeholder="Enter Birth Place" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-3 col-sm-6">
                                     <div class="from-input">
                                         <label for="" class="form-label">City <span style="color: red;">*</span></label>
-                                        <input type="text" class="form-control" id="" placeholder="Enter City">
+                                        <input type="text" class="form-control" id="" placeholder="Enter City" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-3 col-sm-6">
                                     <div class="from-input">
                                         <label for="" class="form-label">Pin <span style="color: red;">*</span></label>
-                                        <input type="number" class="form-control" id="" placeholder="Enter Pin">
+                                        <input type="number" class="form-control" id="" placeholder="Enter Pin" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-3 col-sm-6">
                                     <label for="" class="form-label">Country <span style="color: red;">*</span></label>
-                                    <select class="form-select" aria-label="">
-                                        <option selected disabled>Please Select</option>
+                                    <select class="form-select" aria-label="" required>
+                                       <option value="">Please Select</option>
                                         <option value="India">India</option>
                                     </select>
                                 </div>
                                 <div class="col-lg-3 col-md-3 col-sm-6">
                                     <label for="" class="form-label">State <span style="color: red;">*</span></label>
-                                    <select class="form-select" aria-label="">
-                                        <option selected disabled>Please Select</option>
+                                    <select class="form-select" aria-label="" required>
+                                       <option value="">Please Select</option>
                                         <option value="Rajasthan">Rajasthan</option>
                                     </select>
                                 </div>
                                 <div class="col-lg-3 col-md-3 col-sm-6">
                                     <label for="" class="form-label">District <span style="color: red;">*</span></label>
-                                    <select class="form-select" aria-label="">
-                                        <option selected disabled>Please Select</option>
+                                    <select class="form-select" aria-label="" required>
+                                       <option value="">Please Select</option>
                                         <option value="Dholpur">Dholpur</option>
                                     </select>
                                 </div>
@@ -264,28 +263,30 @@
                                         <label for="" class="form-label">Present Address <span
                                                 style="color: red;">*</span></label>
                                         <textarea class="form-control" id="" rows="3"
-                                            placeholder="Enter Present Address"></textarea>
+                                            placeholder="Enter Present Address" required></textarea>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6">
                                     <div class="from-input">
                                         <label for="" class="form-label">Aadhaar Number</label>
                                         <input type="number" class="form-control" id=""
-                                            placeholder="Enter VID Aadhaar Number">
+                                            placeholder="Enter VID Aadhaar Number" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6">
                                     <div class="from-input">
                                         <label for="" class="form-label">Student Admission Class <span
                                                 style="color: red;">*</span></label>
-                                        <input type="number" class="form-control" id="" placeholder="Enter Class Name">
+                                        <input type="number" class="form-control" id="" placeholder="Enter Class Name" required>
                                     </div>
                                 </div>
                                 <div class="col-md-12 mt-5 text-center">
-                                    <a href="" class="btn btn-primary rounded-pill px-3 p-2">Submit Enquiry<i
-                                            class="fa fa-arrow-right ms-3"></i></a>
+                                    <input type="submit" class="btn btn-primary rounded-pill px-3 p-2" value="Submit Enquiry">
+                                    <!-- <a href="" class="btn btn-primary rounded-pill px-3 p-2">Submit Enquiry<i
+                                            class="fa fa-arrow-right ms-3"></i></a> -->
                                 </div>
                             </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -374,9 +375,20 @@
     <script src="js/easing.min.js"></script>
     <script src="js/waypoints.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emretulek/jbvalidator"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+        $(function () {
+    
+            let validator = $('form.needs-validation').jbvalidator({
+                errorMessage: true,
+                successClass: true,
+            });
+           
+        })
+    </script>
 </body>
 
 </html>
